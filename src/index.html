@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Employees Book</title>
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+    <div id="app">
+        <header class="header">
+            <h1>Employee Database Management System</h1>
+            <button class="createEmployee">Add Employee</button>
+        </header>
+    </div>
+
+    <div class="employees">
+        <div class="employees__names">
+            <span class="employees__names--title">Employee List</span>
+            <div class="employees__names--list"></div>
+        </div>
+        <div class="employee__information">
+            <div class="employee__information--title">
+                <span>Employee Information</span>
+                <img class="editEmployeeIcon" src="https://cdn-icons-png.flaticon.com/128/1827/1827933.png" />
+            </div>
+            <div class="employee__information--info"></div>
+        </div>
+    </div>
+
+    <!-- Add Employee Modal -->
+    <div class="addEmployeeModal">
+        <form class="addEmployeeForm">
+            Add a new Employee
+            <div>
+                <input type="text" name="firstName" placeholder="First Name" required />
+                <input type="text" name="lastName" placeholder="Last Name" required />
+            </div>
+            <input type="text" name="imageUrl" placeholder="Image URL (OPTIONAL)" />
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="number" name="contactNumber" placeholder="Contact Number" required />
+            <input type="number" name="salary" placeholder="Salary" required />
+            <input type="text" name="address" placeholder="Address" required />
+            <input type="date" name="dob" placeholder="Date Of Birth" class="addEmployeeForm__create--dob" required />
+            <input type="submit" name="submit" class="addEmployeeForm__create--submit" value="Submit">
+        </form>
+    </div>
+
+    <!-- Edit Employee Modal -->
+    <div class="editEmployeeModal">
+        <form class="editEmployeeForm">
+            Edit Employee
+            <div>
+                <input type="text" name="firstName" placeholder="First Name" required />
+                <input type="text" name="lastName" placeholder="Last Name" required />
+            </div>
+            <input type="text" name="imageUrl" placeholder="Image URL (OPTIONAL)" />
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="number" name="contactNumber" placeholder="Contact Number" required />
+            <input type="number" name="salary" placeholder="Salary" required />
+            <input type="text" name="address" placeholder="Address" required />
+            <input type="date" name="dob" placeholder="Date Of Birth" class="editEmployeeForm--dob" required />
+            <input type="submit" name="submit" class="editEmployeeForm--submit" value="Edit">
+        </form>
+    </div>
+
+
+
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./index.js" type="module"></script>
+</body>
+
+</html>
